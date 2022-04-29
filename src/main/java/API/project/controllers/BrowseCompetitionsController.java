@@ -180,14 +180,11 @@ public class BrowseCompetitionsController implements Controller{
     void load_svg(int i) throws IOException
     {
     	String extension;
-    	
     	System.out.println("URL :"+competitions.get(i).emblemUrl);
-    	// https://crests.football-data.org/UCL.png error in this image
+    	
     	if(competitions.get(i).emblemUrl!=null)
  		{
     		extension=competitions.get(i).emblemUrl.substring(competitions.get(i).emblemUrl.length() - 3);
-    		//System.out.println("last 3 character:" +extension);
-    		
     		if(extension.equals("svg")) 
     		{
 		 		BufferedImageTranscoder transcoder = new BufferedImageTranscoder();
