@@ -193,8 +193,7 @@ public class BrowseCompetitionsController implements Controller{
 		 		URLConnection conn = url.openConnection();
 		
 		 		try (InputStream file = conn.getInputStream()) {
-		 			//System.out.println("File class :"+file.getClass().getTypeName());
-		 			//System.out.println("File Type of " + file.getName() + " is " +new MimetypesFileTypeMap().getContentType(file));
+	
 		 		    TranscoderInput transIn = new TranscoderInput(file);
 		 		    try {
 						transcoder.transcode(transIn, null);

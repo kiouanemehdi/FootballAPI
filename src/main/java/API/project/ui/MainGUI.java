@@ -83,7 +83,7 @@ public class MainGUI {
   }
 
   public void showBrowseCompetitions(){
-    setupScene(browsecompetitionsWin.ui, "Rest Client for Competitions", 800, 420);
+    setupScene(browsecompetitionsWin.ui, "Rest Client for Competitions", 750, 450);
   }
 
   private void setupScene(Parent ui, String title, int width, int height) {
