@@ -17,7 +17,7 @@ public class ManagerImplementation implements Manager {
 		Request request=new Request.Builder()
 				.url("https://api.football-data.org/v2/"+endpoint)
 				.get()
-				.addHeader("X-Auth-Token", "25659b933fab4b2b94e2fe2d65f8cc97")
+				.addHeader("X-Auth-Token", "/*Put your token here*/")
 				.build();
 		
 		try {
